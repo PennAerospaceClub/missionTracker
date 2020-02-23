@@ -386,7 +386,7 @@ function deleteMarkers() {
 }
 
 async function getCSVData() {
-    fetch('https://missiontracker.herokuapp.com/csv', {
+    fetch('https://pac-balloon-tracker.herokuapp.com/csv', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -531,7 +531,7 @@ function restore () {
 
 // 
 function connect() {
-  fetch('https://missiontracker.herokuapp.com/post', {
+  fetch('https://pac-balloon-tracker.herokuapp.com/post', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -559,7 +559,7 @@ function connect() {
 
 // function to restore past data
 function rest() {
-  fetch('https://missiontracker.herokuapp.com/restore', {
+  fetch('https://pac-balloon-tracker.herokuapp.com/restore', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -586,7 +586,7 @@ function rest() {
 }
 
 function test() {
-  fetch('https://missiontracker.herokuapp.com/test', {
+  fetch('https://pac-balloon-tracker.herokuapp.com/test', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -612,7 +612,7 @@ function test() {
 }
 
 function resetServer() {
-  fetch('https://missiontracker.herokuapp.com/reset', {
+  fetch('https://pac-balloon-tracker.herokuapp.com/reset', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -627,7 +627,7 @@ function resetServer() {
 }
 
 function getData() {
-  fetch('https://missiontracker.herokuapp.com/data', {
+  fetch('https://pac-balloon-tracker.herokuapp.com/data', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -655,7 +655,7 @@ function getData() {
 // this is not the correct goddamn function
 function access() {
   var input = document.getElementById("codeInput");
-  fetch('https://missiontracker.herokuapp.com/access', {
+  fetch('https://pac-balloon-tracker.herokuapp.com/access', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
